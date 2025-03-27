@@ -2,12 +2,12 @@ import streamlit as st
 
 st.set_page_config(page_title="Unit Converter App", page_icon="🔄", layout="centered")
 
+st.title("Unit Converter App")
 name = st.text_input("What is Your Name ?")
 if name:
     st.success(f"Great to have you here, {name}! ")
 
 
-st.title("Unit Converter App")
 st.write("This app converts units of length, weight, area, time, and temperature.")
 
 def convert_units(value, from_unit, to_unit, unit_type):
